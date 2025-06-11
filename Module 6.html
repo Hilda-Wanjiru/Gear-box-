@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body class="modules-page">
+        <div class="container">
+            <link rel="stylesheet" href="style.css">
+            <h1> Module 6 </h1>
+            <h2>Introduction to Wired Communication Protocols</h2>
+            <h3>Communication protocols in embedded systems </h3>
+            <h4>Definition</h4>
+            <p>Communication Protocols are a system of rules and digital message formats enabling the transmission of information between devices.</p>
+            <h4> Importance of Communication Protocols</h4>
+                Communication protocols play a significant role in allowing different devices to communicate and transmit information to each other.
+                <br>In Embedded Systems, Communication Protocols are vital in the function of devices.  Like wireless devices, embedded devices need to talk to each other in order to share useful data.</br>
+                <br>This communication typically follows a Master-Slave protocol exchange, where Masters (Microprocessors) command data transmission to and from Slaves (Sensors).</br>
+            <h4>Working with communication protocols</h4>
+            <h5>1. I2C(Inter-Integrated Circuits)</h5>
+            <li> Type: Synchronous, serial, multi-master, multi-slave.</li>
+            <li>Wires: 2 (SDA - data, SCL - clock).</li>                
+            <li>Features: Addressing system, supports multiple devices on the same bus.</li>  
+            <li>Use Cases: Sensors, EEPROMs, RTC modules.</li>
+            <li>Pros: Simple wiring, multiple devices.</li>
+            <li>Cons: Limited to short distances.</li>
+            <h5>2. UART (Universal Asynchronous Receiver/Transmitter)</h5>
+            <li>Type: Asynchronous, serial.</li>
+            <li>Wires: 2 (TX - transmit, RX - receive); sometimes with GND.</li>
+            <li>Features: Full-duplex communication, no shared clock.</li>
+            <li>Use Cases: Serial communication with PCs, GPS modules, Bluetooth.</li>
+            <li>Pros: Simple, widely used, long-distance capability.</li>
+            <li>Cons: Only point-to-point, no addressing.</li>
+            <h5>3. SPI (Serial Peripheral Interface)</h5>
+            <li>Type: Synchronous, serial, master-slave.</li>
+            <li>Wires: 4 (MISO, MOSI, SCLK, SS/CS).</li>
+            <li> Full-duplex, multiple slaves (via separate SS/CS lines).</li>
+            <li>Cases: SD cards, displays, ADCs.</li>
+            <li> High speed, simplicity.</li>
+           <li>Cons: More wires, no inherent addressing.</li>
+           <h4>A. Ultrasonic Sensor: Simulation using Tinkercad</h4>
+           <img src="Ultrasonic sensor.png">
+           <h4> B. PIR sensor: Simulation using TinkerCad</h4>
+<img src="CD.png">
+<div class="module-navigation">
+    <a href="Module 5.html" class="prev-module">← Previous Module</a>
+    <a href="Module 6.html" class="next-module">Next Module →</a>
+  </div>
+
+
+        </div>
+    </body>
+</html>
